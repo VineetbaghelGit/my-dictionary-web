@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+.search-dictionary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 87vh;
+  background: #fff6f6;
+  flex-direction: column;
+}
+.search-history-words {
+  margin: 20px;
+  background: #fff6f6;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  margin: 30px 0px;
+}
+.logo i {
+  color: #292929;
+  font-size: 30px;
+}
+.logo h3 {
+  font-size: 30px;
+  color: #292929;
+}
+.search-section {
+  width: 25vw;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.search-section input {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.search-section i {
+  background-color: #292929;
+  color: #fff;
+  padding: 12.5px;
+  cursor: pointer;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.searched-para-card {
+  width: 25vw;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  max-height: 400px;
+  overflow-y: auto;
+}
+.searched-para-card h2 {
+  text-align: center;
+  color: #292929;
+}
+ol {
+  margin: 10px 0px;
+}
+li {
+  margin: 10px 0px;
+}
+.part,
+#searched-word {
+  color: #292929;
+  text-transform: capitalize;
+}
+.searched-para-card .paragraph {
+  margin-top: 10px;
+  line-height: 1.4;
+  color: #292929;
+}
+#history {
+  margin: 14px 0px;
+  color: #292929;
+  cursor: pointer;
+  text-decoration: underline;
+  display: none;
+}
+#history:hover {
+  color: #000;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 20px 0px;
+}
+.card .searched-para-card {
+  height: 400px;
+}
+#searched-word {
+  text-align: center;
+}
+#searched-word .title {
+  display: inline;
+}
+#searched-word i {
+  margin-left: 10px;
+  cursor: pointer;
+}
+.search-history-words .search-section {
+  margin: 0 auto;
+}
+#goto {
+  display: none;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+@media (max-width: 992px) {
+  .search-section {
+    width: 35vw;
+  }
+  .searched-para-card {
+    width: 35vw;
+  }
+}
+@media (max-width: 767px) {
+  .search-section {
+    width: 50vw;
+  }
+  .searched-para-card {
+    width: 50vw;
+  }
+}
+@media (max-width: 576px) {
+  .search-section {
+    width: 80%;
+  }
+  .searched-para-card {
+    width: 80%;
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Dictionary App</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./script.js" defer></script>
+  </head>
+  <body class="search-dictionary">
+    <section class="logo">
+      <i class="fa-solid fa-book"></i>
+      <h3>My Dictionary App</h3>
+    </section>
+    <section id="goto">
+      <span id="clickGoto"> Go to search box</span>
+    </section>
+    <section class="search-section" id="searched">
+      <input type="text" id="search-input" placeholder="Search for new word" />
+      <i class="fa-solid fa-magnifying-glass" id="search-button"></i>
+    </section>
+
+    <section id="history">
+      <span id="clickHistory">
+        <i class="fa-solid fa-clock-rotate-left"></i> Watch History
+      </span>
+    </section>
+  </body>
+</html>
